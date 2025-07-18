@@ -1,4 +1,4 @@
-# Google Apps Script Utilities for Request and Evidence Automation
+# Google Apps Script Utilities for Ticket Request and Evidence Automation
 
 This repository contains **Google Apps Script (GAS) utilities** to automate **request tracking, email notifications, and evidence folder management** within Google Workspace. These scripts streamline repetitive processes, reduce manual errors, and maintain consistency **without external pipelines or APIs**.
 
