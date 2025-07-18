@@ -21,9 +21,12 @@ jobs:
       - name: Install Clasp
         run: npm install -g @google/clasp
 
-      - name: Decode and setup Clasp authentication
+      - name: Decode and save OAuth client credentials
         run: |
-          echo "${{ secrets.CLASPRC_JSON_BASE64 }}" | base64 -d > ~/.clasprc.json
+          echo "${{ secrets.CLASP_CREDENTIALS_BASE64 }}" | base64 --decode > /tmp/oauth_client_credentials.json
+
+      - name: Authenticate Clasp
+        run: clasp login --creds /tmp/oauth_client_credentials.json
 
       - name: Push to Google Apps Script
         run: clasp push --force
