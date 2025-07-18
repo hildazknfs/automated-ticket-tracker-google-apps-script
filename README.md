@@ -127,12 +127,6 @@ You can set triggers in Google Apps Script for automated execution.
 - **Type:** Minute timer
 - **Time:** Every minute
 
-### Hourly Tracker Sync
-- **Function:** `synctoInternalTracker`
-- **Event Source:** Time-driven
-- **Type:** Minute Timer
-- **Frequency:** Every minute
-
 ---
 
 ## Usage Example
